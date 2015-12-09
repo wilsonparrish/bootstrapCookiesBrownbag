@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>bootstrap</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+	crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+	crossorigin="anonymous">
+	<!-- My styles -->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-app="bootApp" ng-controller="mainCtrl">
+
+	<div class="container">
+		<h1>check it out check it out check it out</h1>
+		<div class="row">
+			<div class="box col-md-4 col-xs-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus odio error, nihil tempore, odit modi at fuga natus,
+				aut, expedita sapiente rerum! Adipisci, non deserunt assumenda atque doloremque sunt voluptatibus!</div>
+			<div class="box col-md-4 col-xs-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt iure sunt earum cupiditate libero, commodi fugit, illum
+				temporibus optio expedita minima debitis vitae quia! Quia commodi incidunt delectus aspernatur unde.</div>
+			<div class="box col-md-4 col-xs-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid corrupti quis commodi magnam est impedit earum totam
+				quaerat, consequuntur aliquam veritatis ipsam quod laborum vero aspernatur ullam perspiciatis pariatur enim!</div>
+		</div>
+		<div class="col-md-12">
+			<br>
+			<form>
+				<div class="form-group">
+					<div class="col-md-4 col-xs-12">
+						<label for="exampleInputEmail1">Email address</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" ng-model="reg.email">
+					</div>
+					<div class="col-md-4 col-xs-12">
+						<label for="exampleInputEmail1">Username</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Username" ng-model="reg.username">
+					</div>
+					<div class="col-md-4 col-xs-12">
+						<label for="exampleInputEmail1">Message</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Message" ng-model="reg.message">
+					</div>
+				</div>
+			</form>
+			
+			<div class="col-md-offset-5 col-md-2 col-xs-offset-3 col-xs-2">
+				<button ng-click="register()" type="button" class="btn btn-primary">Register</button>
+			</div>
+		</div>
+	</div>
+
+	<div ng-show='user'>
+		<h2>logged in user:</h2> {{user.email}}
+		<br> {{user.username}}
+		<br> {{user.message}}
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+	crossorigin="anonymous"></script>
+	<!-- Angular -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-cookies.js"></script>
+
+	<!-- My scripts-->
+	<script src="app.js"></script>
+	<script src="mainCtrl.js"></script>
+
+</body>
+
+</html>
