@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>bootstrap n'cookies</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+	crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+	crossorigin="anonymous">
+	<!-- My styles -->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-app="bootApp" ng-controller="mainCtrl">
+
+	<div class="container">
+		<h1>bootstrap</h1>
+		<div class="row">
+			<div class="textbox col-md-3 col-xs-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore iusto qui, iste alias similique itaque doloremque dolorum
+				possimus omnis, nisi tempora explicabo voluptatem eveniet commodi, voluptate nemo quos enim ipsum.</div>
+			<div class="textbox col-md-offset-1 col-md-4 col-xs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates a officia illum sit porro soluta nostrum, asperiores
+				in ipsum hic necessitatibus ratione est suscipit neque magni reprehenderit ipsa sunt eos! Lorem ipsum dolor sit amet,
+				consectetur adipisicing elit. Impedit veritatis atque tempore ut praesentium debitis accusamus nisi tenetur blanditiis
+				architecto. Sequi enim blanditiis, tempore, quis voluptates aspernatur ratione accusantium reprehenderit.</div>
+			<div class="textbox col-md-offset-1 col-md-3 col-xs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi beatae fuga ex sint alias veritatis fugiat consequatur
+				repellendus? Tempore, dolorem fuga minima dolor voluptatibus corporis hic? Quidem necessitatibus accusantium praesentium!</div>
+		</div>
+		<div class="row">
+			<form>
+				<div class="form-group col-md-6">
+					<label for="exampleInputEmail1">Email address</label>
+					<input ng-model="newUser.email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="exampleInputEmail1">Password</label>
+					<input ng-model="newUser.password" type="password" class="form-control" id="exampleInputEmail1" placeholder="Password">
+				</div>
+				<button ng-click="register()" type="button" class="btn btn-danger col-md-offset-10">Register</button>
+			</form>
+		</div>
+		<h2 ng-show="user.email">hello {{user.email}}!!</h2>
+	</div>
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+	crossorigin="anonymous"></script>
+	<!-- Angular -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-cookies.js"></script>
+	<!-- My scripts-->
+	<script src="app.js"></script>
+	<script src="mainCtrl.js"></script>
+</body>
+
+</html>
