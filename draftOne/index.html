@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>bootstrap</title>
+	<title>bootstrap n'cookies</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
 	crossorigin="anonymous">
@@ -36,11 +36,11 @@
 					</div>
 					<div class="col-md-4 col-xs-12">
 						<label for="exampleInputEmail1">Username</label>
-						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Username" ng-model="reg.username">
+						<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Username" ng-model="reg.username">
 					</div>
 					<div class="col-md-4 col-xs-12">
 						<label for="exampleInputEmail1">Message</label>
-						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Message" ng-model="reg.message">
+						<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Message" ng-model="reg.message">
 					</div>
 				</div>
 			</form>
@@ -51,7 +51,7 @@
 		</div>
 	</div>
 
-	<div ng-show='user'>
+	<div class="col-md-offset-2" ng-show='user.email'>
 		<h2>logged in user:</h2> {{user.email}}
 		<br> {{user.username}}
 		<br> {{user.message}}
