@@ -1,4 +1,8 @@
 angular.module('bootApp').controller('mainCtrl', function($scope, $cookies){
+	
+	var x = "Cookies Enabled: " + navigator.cookieEnabled;
+	console.log(x);
+	
 	var s = $scope;
 	
 	s.user = {};
